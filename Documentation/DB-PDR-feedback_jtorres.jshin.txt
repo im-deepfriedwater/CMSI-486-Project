@@ -1,0 +1,16 @@
+
+
+Jen and Justin ---
+
+This is simply an awesome job!
+
+The ERD is very nice.  Only two things need addressing:
+1) what is the association between "market" and "food_item"?  Perhaps for
+   the detailed design, include a diamond relationship called "has" or
+   "sells"
+2) make sure you underline the primary key for the food_item entity
+
+Great work.
+
+Total: 10% out of 10% which is an A-plus.
+
