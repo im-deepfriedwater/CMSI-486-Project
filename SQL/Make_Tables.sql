@@ -22,8 +22,8 @@ CREATE TABLE Food (
 );
 
 CREATE TABLE Sells (
-    food_index char references Market(food_index),
-    food_index char references Market(market_index),
+    food_index char references Food(food_index),
+    market_index char references Market(market_index),
     sells_index serial NOT NULL,
     PRIMARY KEY (sells_index)
 );
