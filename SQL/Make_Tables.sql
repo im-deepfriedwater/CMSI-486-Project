@@ -17,7 +17,7 @@ CREATE TABLE Food (
     is_organic boolean NOT NULL,
     is_vegetarian boolean NOT NULL,
     is_vegan boolean NOT NULL,
-    brand char NOT NULL,
+    brand char,
     price double precision NOT NULL
 );
 
