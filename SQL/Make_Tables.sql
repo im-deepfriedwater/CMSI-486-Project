@@ -11,18 +11,14 @@ CREATE TABLE Market (
 );
 
 CREATE TABLE Food (
-    name char NOT NULL,
-    food_category char NOT NULL,
+    name varchar(100) NOT NULL,
+    food_category varchar(50) NOT NULL,
     food_index serial NOT NULL PRIMARY KEY,
     is_organic boolean NOT NULL,
     is_vegetarian boolean NOT NULL,
     is_vegan boolean NOT NULL,
-    brand char,
-    price double precision NOT NULL
-);
-
-CREATE TABLE Sells (
-    food_index integer references Food(food_index),
-    market_index integer references Market(market_index),
-    sells_index serial NOT NULL PRIMARY KEY
+    brand varchar(100),
+    price double precision NOT NULL,
+    is_lbs boolean NOT NULL,
+    market_index integer NOT NULL
 );
